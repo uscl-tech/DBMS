@@ -1,0 +1,107 @@
+
+        :root {
+            --green-text: #4ade80;
+            --dark-bg: #121212;
+            --darker-bg: #1e1e1e;
+            --input-bg: #2d2d2d;
+            --success: #10b981;
+            --error: #ef4444;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--green-text);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1, h2 {
+            color: var(--green-text);
+            border-bottom: 1px solid var(--green-text);
+            padding-bottom: 10px;
+        }
+        
+        .card {
+            background-color: var(--darker-bg);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid var(--green-text);
+            background-color: var(--input-bg);
+            color: var(--green-text);
+            font-size: 16px;
+        }
+        
+        button {
+            background-color: var(--green-text);
+            color: var(--dark-bg);
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            opacity: 0.9;
+        }
+        
+        .avenger-card {
+            background-color: var(--input-bg);
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--green-text);
+        }
+        
+        .status {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+            display: none;
+        }
+        
+        .success {
+            background-color: rgba(16, 185, 129, 0.2);
+            border: 1px solid var(--success);
+            color: var(--success);
+        }
+        
+        .error {
+            background-color: rgba(239, 68, 68, 0.2);
+            border: 1px solid var(--error);
+            color: var(--error);
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .button-group button {
+            flex: 1;
+        }
+    

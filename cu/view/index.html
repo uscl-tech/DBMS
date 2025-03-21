@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers API Tester</title>
+
+    <script src="app.js" defer ></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Avengers API Tester</h1>
+        
+        <!-- POST Request Section -->
+        <div class="card">
+            <h2>Add New Avenger</h2>
+            <form id="addAvengerForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="e.g. Iron Man">
+                </div>
+                <div class="form-group">
+                    <label for="power">Power:</label>
+                    <input type="text" id="power" name="power" required placeholder="e.g. Genius, Technology">
+                </div>
+                <div class="form-group">
+                    <label for="team">Team:</label>
+                    <input type="text" id="team" name="team" required placeholder="e.g. Avengers">
+                </div>
+                <button type="submit">Add Avenger</button>
+            </form>
+            <div id="postStatus" class="status"></div>
+        </div>
+        
+        <!-- GET Request Section -->
+        <div class="card">
+            <h2>Avengers List</h2>
+            <div class="button-group">
+                <button id="getAllAvengers">Get All Avengers</button>
+                <button id="getById">Get Avenger by ID</button>
+            </div>
+            <div id="idInput" style="display: none; margin-top: 10px;">
+                <input type="number" id="avengerId" placeholder="Enter Avenger ID" min="1">
+                <button id="fetchById" style="margin-top: 10px;">Fetch</button>
+            </div>
+            <div id="getStatus" class="status"></div>
+            <div id="avengersList"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
